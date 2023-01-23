@@ -1,0 +1,50 @@
+{
+  "enrichments": {
+    "properties": {
+      "openAccess": {
+        "properties": {
+          "unpaywall": {
+            "properties": {
+              "isOa": {
+                "type": "boolean"
+              },
+              "oaStatus": {
+                "type": "keyword"
+              },
+              "hasRepositoryCopy": {
+                "type": "boolean"
+              },
+              "oaLocations": {
+                "type": "nested",
+                "properties": {
+                  "hostType": {
+                    "type": "keyword"
+                  },
+                  "isBest": {
+                    "type": "boolean"
+                  },
+                  "license": {
+                    "type": "keyword"
+                  },
+                  "url": {
+                    "type": "keyword",
+                    "index": false
+                  },
+                  "urlForLandingPage": {
+                    "type": "keyword",
+                    "index": false
+                  },
+                  "urlForPdf": {
+                    "type": "keyword",
+                    "index": false,
+                    "copy_to": "fulltextUrl"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

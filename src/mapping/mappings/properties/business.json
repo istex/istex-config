@@ -1,0 +1,56 @@
+{
+  "business": {
+    "properties": {
+      "name": {
+        "type": "keyword"
+      },
+      "hasDoi": {
+        "type": "boolean"
+      },
+      "hasFulltext": {
+        "type": "boolean"
+      },
+      "xPublicationDate": {
+        "type": "date",
+        "ignore_malformed": true,
+        "format": "yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          },
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "publicationDate:normalizer"
+          }
+        }
+      },
+      "xissn": {
+        "type": "keyword",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "id:normalizer"
+          }
+        }
+      },
+      "xisbn": {
+        "type": "keyword",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "id:normalizer"
+          }
+        }
+      },
+      "pageRange": {
+        "type": "text",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "volpage:normalizer"
+          }
+        }
+      }
+    }
+  }
+}

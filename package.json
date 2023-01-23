@@ -1,0 +1,39 @@
+{
+  "name": "istex-config",
+  "version": "1.0.0",
+  "description": "Centralized configuration for Istex applications and Istex business",
+  "main": "index.js",
+  "scripts": {
+    "es:mapping:log": "./bin/es-mapping-log.js",
+    "es:mapping:output": "./bin/es-mapping-output.js",
+    "es:mapping-paths:log": "./bin/es-mapping-paths-log.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istex/istex-config.git"
+  },
+  "keywords": [
+    "config",
+    "configuration",
+    "istex"
+  ],
+  "author": "jj618",
+  "license": "CECILL-2.1",
+  "bugs": {
+    "url": "https://github.com/istex/istex-config/issues"
+  },
+  "homepage": "https://github.com/istex/istex-config#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-promise": "^6.0.0",
+    "node-jq": "^2.3.3"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "lodash": "^4.17.21"
+  }
+}
