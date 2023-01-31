@@ -1,0 +1,15 @@
+{
+  "fulltext": {
+    "type": "text",
+    "analyzer": "placeholderAnalyzer"
+  },
+  "table": {
+    "type": "text"
+  },
+  "figure": {
+    "type": "text"
+  },
+  "hasFormula": {
+    "type": "boolean"
+  }
+}

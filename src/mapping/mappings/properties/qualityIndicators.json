@@ -1,0 +1,52 @@
+{
+  "qualityIndicators": {
+    "properties": {
+      "abstractCharCount": {
+        "type": "integer"
+      },
+      "abstractWordCount": {
+        "type": "integer"
+      },
+      "pdfCharCount": {
+        "type": "integer"
+      },
+      "pdfPageCount": {
+        "type": "integer"
+      },
+      "pdfText": {
+        "type": "boolean"
+      },
+      "pdfVersion": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "pdfWordCount": {
+        "type": "integer"
+      },
+      "pdfWordsPerPage": {
+        "type": "integer"
+      },
+      "refBibsNative": {
+        "type": "boolean"
+      },
+      "score": {
+        "type": "double"
+      },
+      "tdmReady": {
+        "type": "boolean"
+      },
+      "teiSource": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}

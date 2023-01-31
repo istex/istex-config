@@ -8,8 +8,10 @@ const technical = require('./mapping/mappings/properties/technical.json');
 const business = require('./mapping/mappings/properties/business.json');
 const files = require('./mapping/mappings/properties/files.json');
 const enrichments = require('./mapping/mappings/properties/enrichments.json');
+const qualityIndicators = require('./mapping/mappings/properties/qualityIndicators.json');
 const identifiers = require('./mapping/mappings/properties/root/identifiers.json');
 const metadata = require('./mapping/mappings/properties/root/metadata.json');
+const fulltext = require('./mapping/mappings/properties/root/fulltext.json');
 
 module.exports = { buildMapping };
 
@@ -25,6 +27,8 @@ function _buildMappings () {
     properties: merge(
       _sort(metadata),
       _sort(identifiers),
+      fulltext,
+      qualityIndicators,
       business,
       technical,
       authors,
