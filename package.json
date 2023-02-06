@@ -1,5 +1,5 @@
 {
-  "name": "istex-config",
+  "name": "@istex/istex-config",
   "version": "1.0.0",
   "description": "Centralized configuration for Istex applications and Istex business",
   "main": "index.js",
@@ -8,6 +8,9 @@
     "es:mapping:output": "./bin/es-mapping-output.js",
     "es:mapping-paths:log": "./bin/es-mapping-paths-log.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "istex:config:es:mapping:log": "./bin/es-mapping-log.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,9 @@
   "license": "CECILL-2.1",
   "bugs": {
     "url": "https://github.com/istex/istex-config/issues"
+  },
+  "engines": {
+    "node": ">=14.18"
   },
   "homepage": "https://github.com/istex/istex-config#readme",
   "devDependencies": {
