@@ -11,8 +11,7 @@
   },
   "bin": {
     "istex-config-es-mapping-log": "./bin/es-mapping-log.js",
-    "istex-config-es-mapping-output": "./bin/es-mapping-output.js",
-    "istex-config-es-mapping-paths-log": "./bin/es-mapping-paths-log.js"
+    "istex-config-es-mapping-output": "./bin/es-mapping-output.js"
   },
   "repository": {
     "type": "git",
