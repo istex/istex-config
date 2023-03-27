@@ -56,8 +56,7 @@
       "hal": {
         "properties": {
           "code": {
-            "type": "keyword",
-            "copy_to": "business.classifications.hal.code"
+            "type": "keyword"
           },
           "fr": {
             "type": "text",
@@ -79,8 +78,7 @@
           "hal": {
             "properties": {
               "code": {
-                "type": "keyword",
-                "copy_to": "business.classifications.hal.code"
+                "type": "keyword"
               },
               "fr": {
                 "type": "text",

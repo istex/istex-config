@@ -51,8 +51,7 @@
         "type": "nested",
         "properties": {
           "address": {
-            "type": "text",
-            "copy_to": "business.authorsAddresses"
+            "type": "text"
           },
           "orgName": {
             "type": "text",
@@ -75,15 +74,14 @@
             "type": "keyword"
           },
           "rnsr": {
-            "type": "keyword",
-            "copy_to": "business.authorsRnsr"
+            "type": "keyword"
           },
           "enrichments": {
             "dynamic": true,
             "properties": {
               "rnsr": {
                 "type": "keyword",
-                "copy_to":["authors.affiliations.rnsr","business.authorsRnsr"]
+                "copy_to":["authors.affiliations.rnsr"]
               }
             }
           }
