@@ -1,5 +1,5 @@
 const { assign, merge, _ } = require('lodash');
-const mappings = require('./mapping/mappings/mappings.json');
+const mappings = require('./mapping/mappings/mappings.js');
 const settings = require('./mapping/settings/settings.json');
 const dynamicTemplates = require('./mapping/mappings/dynamicTemplates.json');
 const authors = require('./mapping/mappings/properties/authors.json');
