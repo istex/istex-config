@@ -10,7 +10,18 @@ async function getMappingsPaths (mapping) {
     .then((result) => {
       return _.chain(result)
         .split('\n')
-        .map((value) => _.chain(JSON.parse(value)).pullAll(esMappingParameters).reject(isNumeric).join('.').value())
+        .map((value) =>
+          _.chain(JSON.parse(value))
+            .reduce((accu, value, index, collection) => {
+              if (collection[index - 1] !== 'properties' && esMappingParameters.includes(value)) return accu;
+              accu.push(value);
+              return accu;
+            },
+            [])
+            .reject(isNumeric)
+            .join('.')
+            .value(),
+        )
         .compact()
         .uniq()
         .reject((value, index, array) => {
