@@ -36,7 +36,7 @@
           "pattern": "^[_]*([0-9]+)[_]*.*",
           "replacement": "$1"
         },
-        "annee": {
+        "year": {
           "type": "pattern_replace",
           "pattern": ".*([0-9]{4}).*",
           "replacement": "$1"
@@ -207,7 +207,7 @@
         "publicationDate:normalizer": {
           "type": "custom",
           "char_filter": [
-            "annee"
+            "year"
           ]
         }
       }
