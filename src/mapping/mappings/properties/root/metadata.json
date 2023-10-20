@@ -50,27 +50,16 @@
   },
   "classifications": {
     "properties": {
-      "dewey": {
+      "inist": {
         "type": "keyword"
       },
-      "hal": {
-        "properties": {
-          "code": {
-            "type": "keyword"
-          },
-          "fr": {
-            "type": "text",
-            "analyzer": "customFrenchAnalyzer"
-          },
-          "en": {
-            "type": "text"
-          }
-        }
-      },
-      "tef": {
+      "scienceMetrix": {
         "type": "keyword"
       },
-      "thesisDomain": {
+      "scopus": {
+        "type": "keyword"
+      },
+      "wos": {
         "type": "keyword"
       },
       "enrichments": {
