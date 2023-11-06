@@ -40,6 +40,12 @@
       "en": {
         "type": "text"
       },
+      "de": {
+        "type": "text"
+      },
+      "es": {
+        "type": "text"
+      },
       "default": {
         "type": "text"
       }
