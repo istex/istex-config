@@ -1,17 +1,17 @@
 const { assign, merge, _ } = require('lodash');
-const mappings = require('./mapping/mappings/mappings.js');
-const settings = require('./mapping/settings/settings.json');
-const dynamicTemplates = require('./mapping/mappings/dynamicTemplates.json');
-const authors = require('./mapping/mappings/properties/authors.json');
-const host = require('./mapping/mappings/properties/host.json');
-const technical = require('./mapping/mappings/properties/technical.json');
-const business = require('./mapping/mappings/properties/business.json');
-const files = require('./mapping/mappings/properties/files.json');
-const enrichments = require('./mapping/mappings/properties/enrichments.json');
-const qualityIndicators = require('./mapping/mappings/properties/qualityIndicators.json');
-const identifiers = require('./mapping/mappings/properties/root/identifiers.json');
-const metadata = require('./mapping/mappings/properties/root/metadata.json');
-const fulltext = require('./mapping/mappings/properties/root/fulltext.json');
+const mappings = require('./mapping/mappings/mappings');
+const settings = require('./mapping/settings/settings');
+const dynamicTemplates = require('./mapping/mappings/dynamicTemplates');
+const authors = require('./mapping/mappings/properties/authors');
+const host = require('./mapping/mappings/properties/host');
+const technical = require('./mapping/mappings/properties/technical');
+const business = require('./mapping/mappings/properties/business');
+const files = require('./mapping/mappings/properties/files');
+const enrichments = require('./mapping/mappings/properties/enrichments');
+const qualityIndicators = require('./mapping/mappings/properties/qualityIndicators');
+const identifiers = require('./mapping/mappings/properties/root/identifiers');
+const metadata = require('./mapping/mappings/properties/root/metadata');
+const fulltext = require('./mapping/mappings/properties/root/fulltext');
 
 module.exports = { buildMapping };
 
