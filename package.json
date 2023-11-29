@@ -1,6 +1,6 @@
 {
   "name": "@istex/istex-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Centralized configuration for Istex applications and Istex business",
   "main": "index.js",
   "scripts": {
