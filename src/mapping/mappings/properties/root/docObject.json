@@ -1,0 +1,7 @@
+{
+  "docObject": {
+    "type": "keyword",
+    "index": false,
+    "store": true
+  }
+}

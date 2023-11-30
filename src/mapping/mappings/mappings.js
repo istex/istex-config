@@ -7,6 +7,7 @@ module.exports = {
       'fulltext',
       'figure',
       'table',
+      'docObject',
     ],
   },
   _meta: {

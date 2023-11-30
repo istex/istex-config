@@ -13,6 +13,7 @@ const qualityIndicators = require('./mapping/mappings/properties/qualityIndicato
 const identifiers = require('./mapping/mappings/properties/root/identifiers');
 const metadata = require('./mapping/mappings/properties/root/metadata');
 const fulltext = require('./mapping/mappings/properties/root/fulltext');
+const docObject = require('./mapping/mappings/properties/root/docObject');
 
 module.exports = { buildMapping };
 
@@ -37,6 +38,7 @@ function _buildMappings () {
       refBibs,
       files,
       enrichments,
+      docObject,
     ),
   });
 }
