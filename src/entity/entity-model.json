@@ -395,6 +395,8 @@
         "doi": "STRING",
         "editors": "STRING",
         "isbn": "STRING",
+        "eisbn": "STRING",
+        "eissn": "STRING",
         "issn": "STRING",
         "issue": "STRING",
         "pages": [

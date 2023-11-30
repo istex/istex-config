@@ -4,6 +4,7 @@ const settings = require('./mapping/settings/settings');
 const dynamicTemplates = require('./mapping/mappings/dynamicTemplates');
 const authors = require('./mapping/mappings/properties/authors');
 const host = require('./mapping/mappings/properties/host');
+const refBibs = require('./mapping/mappings/properties/refBibs');
 const technical = require('./mapping/mappings/properties/technical');
 const business = require('./mapping/mappings/properties/business');
 const files = require('./mapping/mappings/properties/files');
@@ -33,6 +34,7 @@ function _buildMappings () {
       technical,
       authors,
       host,
+      refBibs,
       files,
       enrichments,
     ),

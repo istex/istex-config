@@ -1,0 +1,175 @@
+{
+  "serie": {
+    "properties": {
+      "doi": {
+        "type": "keyword",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "id:normalizer"
+          }
+        }
+      },
+      "title": {
+        "type": "text",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "title:normalizer"
+          }
+        }
+      },
+      "eissn": {
+        "type": "keyword",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "id:normalizer"
+          }
+        }
+      },
+      "issn": {
+        "type": "keyword",
+        "fields": {
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "id:normalizer"
+          }
+        }
+      },
+      "language": {
+        "type": "keyword"
+      },
+      "issue": {
+        "type": "integer",
+        "ignore_malformed": true,
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          },
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "issue:normalizer"
+          }
+        }
+      },
+      "pages": {
+        "properties": {
+          "first": {
+            "type": "integer",
+            "ignore_malformed": true,
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          },
+          "last": {
+            "type": "integer",
+            "ignore_malformed": true,
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          },
+          "total": {
+            "type": "integer",
+            "ignore_malformed": true,
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "conference": {
+        "properties": {
+          "name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              },
+              "normalized": {
+                "type": "keyword",
+                "normalizer": "title:normalizer"
+              }
+            }
+          }
+        }
+      },
+      "publicationDate": {
+        "type": "date",
+        "ignore_malformed": true,
+        "format": "yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          },
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "publicationDate:normalizer"
+          }
+        }
+      },
+      "copyrightDate": {
+        "type": "date",
+        "ignore_malformed": true,
+        "format": "yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          },
+          "normalized": {
+            "type": "keyword",
+            "normalizer": "publicationDate:normalizer"
+          }
+        }
+      },
+      "editors": {
+        "properties": {
+          "affiliations": {
+            "type": "nested",
+            "properties": {
+              "address": {
+                "type": "text"
+              },
+              "orgName": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "country": {
+                "type": "keyword"
+              }
+            }
+          },
+          "fullname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          },
+          "forename": {
+            "type": "text"
+          },
+          "surname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
