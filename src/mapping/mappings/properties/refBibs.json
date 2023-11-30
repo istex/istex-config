@@ -44,27 +44,29 @@
         }
       },
       "authors": {
-        "surname": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword"
+        "properties": {
+          "surname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
             }
-          }
-        },
-        "forename": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword"
+          },
+          "forename": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
             }
-          }
-        },
-        "fullname": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword"
+          },
+          "fullname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
             }
           }
         }
@@ -90,27 +92,29 @@
             }
           },
           "authors": {
-            "surname": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword"
+            "properties": {
+              "surname": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
                 }
-              }
-            },
-            "forename": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword"
+              },
+              "forename": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
                 }
-              }
-            },
-            "fullname": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword"
+              },
+              "fullname": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
                 }
               }
             }
