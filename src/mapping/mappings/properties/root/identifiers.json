@@ -1,4 +1,13 @@
 {
+  "articleId": {
+    "type": "keyword",
+    "fields": {
+      "normalized": {
+        "type": "keyword",
+        "normalizer": "id:normalizer"
+      }
+    }
+  },
   "bibCode": {
     "type": "keyword",
     "fields": {
