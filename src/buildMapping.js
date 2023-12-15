@@ -8,6 +8,7 @@ const refBibs = require('./mapping/mappings/properties/refBibs');
 const technical = require('./mapping/mappings/properties/technical');
 const business = require('./mapping/mappings/properties/business');
 const files = require('./mapping/mappings/properties/files');
+const serie = require('./mapping/mappings/properties/serie');
 const enrichments = require('./mapping/mappings/properties/enrichments');
 const qualityIndicators = require('./mapping/mappings/properties/qualityIndicators');
 const identifiers = require('./mapping/mappings/properties/root/identifiers');
@@ -36,6 +37,7 @@ function _buildMappings () {
       authors,
       host,
       refBibs,
+      serie,
       files,
       enrichments,
       docObject,

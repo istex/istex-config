@@ -169,6 +169,48 @@
             }
           }
         }
+      },
+      "authors": {
+        "properties": {
+          "affiliations": {
+            "type": "nested",
+            "properties": {
+              "address": {
+                "type": "text"
+              },
+              "orgName": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "country": {
+                "type": "keyword"
+              }
+            }
+          },
+          "fullname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          },
+          "forename": {
+            "type": "text"
+          },
+          "surname": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
       }
     }
   }
