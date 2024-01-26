@@ -222,7 +222,7 @@
           "publicationDate": {
             "type": "date",
             "ignore_malformed": true,
-            "format": "yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy",
+            "format": "date_optional_time",
             "fields": {
               "keyword": {
                 "type": "keyword"

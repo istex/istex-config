@@ -136,7 +136,7 @@ module.exports = {
   publicationDate: {
     type: 'date',
     ignore_malformed: true,
-    format: 'yyy-MM-dd HH:mm:ss||yyy-MM-dd||epoch_millis',
+    format: 'date_optional_time',
     fields: {
       normalized: {
         type: 'keyword',
@@ -147,7 +147,7 @@ module.exports = {
   copyrightDate: {
     type: 'date',
     ignore_malformed: true,
-    format: 'yyy-MM-dd HH:mm:ss||yyy-MM-dd||epoch_millis',
+    format: 'date_optional_time',
     fields: {
       normalized: {
         type: 'keyword',
@@ -186,6 +186,9 @@ module.exports = {
           mesh: {
             type: 'keyword',
           },
+          teeft: {
+            type: 'keyword',
+          },
         },
       },
       fr: {
@@ -197,6 +200,26 @@ module.exports = {
             type: 'keyword',
           },
           rameau: {
+            type: 'keyword',
+          },
+        },
+      },
+      de: {
+        properties: {
+          author: {
+            type: 'keyword',
+          },
+          mesh: {
+            type: 'keyword',
+          },
+        },
+      },
+      es: {
+        properties: {
+          author: {
+            type: 'keyword',
+          },
+          mesh: {
             type: 'keyword',
           },
         },
@@ -217,6 +240,44 @@ module.exports = {
             type: 'keyword',
           },
           mesh: {
+            type: 'keyword',
+          },
+        },
+      },
+    },
+  },
+  namedEntities: {
+    properties: {
+      unitex: {
+        properties: {
+          bibl: {
+            type: 'keyword',
+          },
+          date: {
+            type: 'keyword',
+          },
+          geoName: {
+            type: 'keyword',
+          },
+          orgName: {
+            type: 'keyword',
+          },
+          orgNameFunder: {
+            type: 'keyword',
+          },
+          orgNameProvider: {
+            type: 'keyword',
+          },
+          persName: {
+            type: 'keyword',
+          },
+          placeName: {
+            type: 'keyword',
+          },
+          refBibl: {
+            type: 'keyword',
+          },
+          refUrl: {
             type: 'keyword',
           },
         },

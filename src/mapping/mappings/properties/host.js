@@ -48,7 +48,7 @@ module.exports = {
       },
       electronicPublicationDate: {
         type: 'date',
-        format: 'yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy',
+        format: 'date_optional_time',
         ignore_malformed: true,
         fields: {
           keyword: {
@@ -63,7 +63,7 @@ module.exports = {
       publicationDate: {
         type: 'date',
         ignore_malformed: true,
-        format: 'yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy',
+        format: 'date_optional_time',
         fields: {
           keyword: {
             type: 'keyword',
@@ -77,7 +77,7 @@ module.exports = {
       copyrightDate: {
         type: 'date',
         ignore_malformed: true,
-        format: 'yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy',
+        format: 'date_optional_time',
         fields: {
           keyword: {
             type: 'keyword',
@@ -307,7 +307,7 @@ module.exports = {
           date: {
             type: 'date',
             ignore_malformed: true,
-            format: 'yyy-MM-dd HH:mm:ss||yyy-MM-dd||yyy-MM||yyyy',
+            format: 'date_optional_time',
             fields: {
               keyword: {
                 type: 'keyword',
