@@ -1,6 +1,6 @@
 {
   "docObject": {
-    "type": "keyword",
+    "type": "binary",
     "index": false,
     "store": true
   }
