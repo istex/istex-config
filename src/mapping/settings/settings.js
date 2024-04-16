@@ -2,7 +2,6 @@ module.exports = {
   index: {
     number_of_replicas: '0',
     number_of_shards: '5',
-    default_pipeline: 'set_creation_and_modification_date', // can be switch to '_none'
     similarity: {
       istex_similarity_default: {
         type: 'BM25',
