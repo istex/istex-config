@@ -1,7 +1,6 @@
 {
   "docObject": {
     "type": "binary",
-    "index": false,
     "store": true
   }
 }
