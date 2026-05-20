@@ -236,5 +236,14 @@
         "normalizer": "id:normalizer"
       }
     }
+  },
+  "chapterId": {
+    "type": "keyword",
+    "fields": {
+      "normalized": {
+        "type": "keyword",
+        "normalizer": "id:normalizer"
+      }
+    }
   }
 }
