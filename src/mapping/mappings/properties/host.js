@@ -97,7 +97,7 @@ module.exports = {
           },
           normalized: {
             type: 'keyword',
-            normalizer: 'issue:normalizer',
+            normalizer: 'volpage:normalizer',
           },
         },
       },
