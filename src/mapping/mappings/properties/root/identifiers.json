@@ -245,5 +245,14 @@
         "normalizer": "id:normalizer"
       }
     }
+  },
+  "bookId": {
+    "type": "keyword",
+    "fields": {
+      "normalized": {
+        "type": "keyword",
+        "normalizer": "id:normalizer"
+      }
+    }
   }
 }
