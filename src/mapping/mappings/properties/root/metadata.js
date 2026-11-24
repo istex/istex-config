@@ -164,7 +164,11 @@ module.exports = {
   originalGenre: {
     type: 'keyword',
   },
+  // @NotSoDeprecated
   corpusName: {
+    type: 'keyword',
+  },
+  package: {
     type: 'keyword',
   },
   source: {
