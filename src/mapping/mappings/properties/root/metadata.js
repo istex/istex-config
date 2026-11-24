@@ -3,7 +3,7 @@ module.exports = {
   // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   title: {
     properties: {
-      fr: {
+      fre: {
         type: 'text',
         analyzer: 'customFrenchAnalyzer',
         fields: {
@@ -13,7 +13,7 @@ module.exports = {
           },
         },
       },
-      en: {
+      eng: {
         type: 'text',
         fields: {
           normalized: {
@@ -22,7 +22,7 @@ module.exports = {
           },
         },
       },
-      de: {
+      ger: {
         type: 'text',
         fields: {
           normalized: {
@@ -31,7 +31,7 @@ module.exports = {
           },
         },
       },
-      es: {
+      spa: {
         type: 'text',
         fields: {
           normalized: {
@@ -55,17 +55,17 @@ module.exports = {
   // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   abstract: {
     properties: {
-      fr: {
+      fre: {
         type: 'text',
         analyzer: 'customFrenchAnalyzer',
       },
-      en: {
+      eng: {
         type: 'text',
       },
-      de: {
+      ger: {
         type: 'text',
       },
-      es: {
+      spa: {
         type: 'text',
       },
       default: {
@@ -97,12 +97,12 @@ module.exports = {
               code: {
                 type: 'keyword',
               },
-              fr: {
+              fre: {
                 type: 'text',
                 analyzer: 'customFrenchAnalyzer',
                 copy_to: 'classifications.hal.fr',
               },
-              en: {
+              eng: {
                 type: 'text',
                 copy_to: 'classifications.hal.en',
               },
@@ -182,7 +182,7 @@ module.exports = {
   },
   keywords: {
     properties: {
-      en: {
+      eng: {
         properties: {
           author: {
             type: 'keyword',
@@ -195,7 +195,7 @@ module.exports = {
           },
         },
       },
-      fr: {
+      fre: {
         properties: {
           author: {
             type: 'keyword',
@@ -208,7 +208,7 @@ module.exports = {
           },
         },
       },
-      de: {
+      ger: {
         properties: {
           author: {
             type: 'keyword',
@@ -218,7 +218,7 @@ module.exports = {
           },
         },
       },
-      es: {
+      spa: {
         properties: {
           author: {
             type: 'keyword',
