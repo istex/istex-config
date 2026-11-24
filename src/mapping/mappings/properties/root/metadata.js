@@ -1,6 +1,11 @@
 module.exports = {
-  // use ISO 639-1 for lang key
-  // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+  // use ISO 639-2b for lang key
+  lang: {
+    type: 'keyword',
+  },
+  languages: {
+    type: 'keyword',
+  },
   title: {
     properties: {
       fre: {
@@ -154,9 +159,6 @@ module.exports = {
         normalizer: 'publicationDate:normalizer',
       },
     },
-  },
-  language: {
-    type: 'keyword',
   },
   genre: {
     type: 'keyword',
